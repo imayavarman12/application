@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<head>
+    <title>Registration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+    .r-container {
+    background-color: #ffffff;
+    width: 500px;
+    height: 500px;
+    margin-top:100px;
+    margin-left: 250px ;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 30px 30px 50px rgba(0, 0, 0, 0.1);
+    align-content: center;
+}
+
+.button{
+    background-color: #b1fa75;
+    color: #eeeef6;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    height: 30px;
+    width: 300px;
+    
+}
+td{
+    padding: 12px;
+    font-family: Montserrat;
+}
+body{
+    background-image: linear-gradient(to right, rgb(19, 180, 201), rgb(204, 0, 255));
+    width:200px;
+    border:0px;
+    height:30px;
+    border-radius:10px;
+    margin-left:245px;
+}
+
+</style>
+<script>
+    function val(){
+        var a=document.getElementById("fn1").value;
+        var b=document.getElementById("un1").value;
+        var c=document.getElementById("e1").value;
+        var d=document.getElementById("n1").value;
+        var e=document.getElementById("p1").value;
+        var f=document.getElementById("p2").value;
+    
+        document.writeln(a);
+        document.writeln(b);
+        document.writeln(c);
+        document.writeln(d);
+        document.writeln(e);
+        document.writeln(f);
+    
+    
+    }
+    </script>
+</head>
+<body>
+    <div class="r-container">
+        <h1><b>Registration</b></h1>
+        <form>
+            <table>
+                <tr>
+                    <td>Full Name:<br><br><input type="text" name="Name" placeholder="Enter your name" id="fn1"></td>
+                    <td>UserName:<br><br><input type="text" name="Name" placeholder="Enter your UserName" id="un1"></td>
+                </tr>
+                <tr>
+                    <td>Email:<br><br><input type="email" name="email" placeholder="Enter your email" id="e1"></td>
+                    <td>Phone Number:<br><br><input type="tel" name="Number" placeholder="Enter your Number" id="n1"></td>
+                </tr>
+                <tr>
+                    <td>Password:<br><br><input type="password" name="password" placeholder="Enter your name" id="p1"></td>
+                    <td>Conform Password:<br><br><input type="password" name="password" placeholder="Enter your UserName" id="p2"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <tr>
+                        <td>
+                            
+                              Gender:<br>
+                                <input type="radio" id="huey" name="drone" value="huey" />
+                                <label for="Male">Male</label>
+                                <input type="radio" id="dewey" name="drone" value="dewey"/>
+                                <label for="Female">Female</label>
+                                <input type="radio" id="louie" name="drone" value="louie"/>
+                                <label for="prefer not to say">Not to say</label>
+                    </td>
+                </tr>
+            
+            </table>
+            <br>
+
+            <center><button class="button" onclick="val()">Register</button></center>
+            
+            
+        </form>
+        
+    </div>
+</body>
+</html>
